@@ -1,2 +1,3 @@
 greet = 'hello world'
-print(greet)
+test = 'test'
+print(f'{greet}+{test}')
