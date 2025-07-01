@@ -1,6 +1,5 @@
-from enemy import Enemy
+from constructor import Enemy
 
-zombie = Enemy()
-zombie.type_of_enemy = "Zombie"
+zombie = Enemy("zombie", 10, 1)
 
-print(zombie.attack())
+print(zombie.walk_forward())
