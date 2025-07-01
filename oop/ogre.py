@@ -1,4 +1,5 @@
 from enemy import Enemy
+import random
 
 
 class Ogre(Enemy):
@@ -10,7 +11,13 @@ class Ogre(Enemy):
         )
 
     def talk(self):
-        print("Ogre is coming!")
+        print("*gruff growl*")
 
     def walk_forward(self):
         print("Ogre moves closer to you.")
+
+    def special_attack(self):
+        did_special_attack_work = random.random() < 0.20
+        if did_special_attack_work:
+            self.attack_damage += 4
+            print(f"Ogre gets angry and increases attack by 4.")
