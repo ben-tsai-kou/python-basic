@@ -1,8 +1,6 @@
 from enemy import Enemy
 
-enemy1 = Enemy()
-enemy2 = Enemy()
-enemy2.health_points = 20
+zombie = Enemy()
+zombie.type_of_enemy = "Zombie"
 
-print(enemy1.health_points)
-print(enemy2.health_points)
+print(zombie.attack())
